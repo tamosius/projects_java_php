@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="573.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="publisherReceiver.PublisherReceiverController">
+   <children>
+      <Pane prefHeight="187.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="14.0" layoutY="19.0" prefHeight="31.0" prefWidth="422.0" text="Enter how many bits long you would like to generate the prime numbers:" textFill="#22094d">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="valueBitsPrimary" layoutX="438.0" layoutY="22.0" prefHeight="25.0" prefWidth="60.0">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="firstPrimary" layoutX="16.0" layoutY="57.0" prefHeight="25.0" prefWidth="570.0">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="secondPrimary" layoutX="16.0" layoutY="94.0" prefHeight="25.0" prefWidth="570.0">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></TextField>
+            <Button fx:id="generatePrime" layoutX="279.0" layoutY="125.0" mnemonicParsing="false" onAction="#generatePrimeNumbers" text="Generate Prime Numbers" textFill="#22094d">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="checkPrime" layoutX="443.0" layoutY="125.0" mnemonicParsing="false" onAction="#checkPrimeNumbers" text="Check Prime Numbers" textFill="#22094d">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="clearField" layoutX="514.0" layoutY="22.0" mnemonicParsing="false" onAction="#clearFields" prefHeight="25.0" prefWidth="72.0" text="Clear" textFill="#f50e0e">
+               <font>
+                  <Font name="Arial Bold Italic" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <ImageView fx:id="primeOrNotPrime1" fitHeight="30.0" fitWidth="30.0" layoutX="593.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="primeOrNotPrime2" fitHeight="30.0" fitWidth="30.0" layoutX="593.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Pane id="middlePanel" prefHeight="205.0" prefWidth="601.0" stylesheets="@publisherreceiver.css">
+         <children>
+            <Label layoutX="16.0" layoutY="20.0" text="Modulus (public key):" textFill="#22094d">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="18.0" layoutY="58.0" text="phi:" textFill="#22094d">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="14.0" layoutY="96.0" text="Second public key:" textFill="#22094d">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="16.0" layoutY="136.0" text="Private key:" textFill="#22094d">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="modulusN" layoutX="142.0" layoutY="16.0" prefHeight="25.0" prefWidth="447.0">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="phi" layoutX="142.0" layoutY="54.0" prefHeight="25.0" prefWidth="447.0">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="publicE" layoutX="142.0" layoutY="92.0" prefHeight="25.0" prefWidth="447.0">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="privateKeyD" layoutX="142.0" layoutY="132.0" prefHeight="25.0" prefWidth="447.0">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></TextField>
+            <Button fx:id="publishKeys" layoutX="457.0" layoutY="166.0" mnemonicParsing="false" onAction="#publishKeys" prefHeight="25.0" prefWidth="132.0" text="Publish Public keys" textFill="#22094d">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Button>
+         </children></Pane>
+      <Pane prefHeight="163.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="14.0" layoutY="23.0" text="Ciphertext:" textFill="#22094d">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Label>
+            <TextField fx:id="cipherText" layoutX="14.0" layoutY="47.0" prefHeight="25.0" prefWidth="577.0">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></TextField>
+            <Label layoutX="14.0" layoutY="100.0" text="Decrypted message:" textFill="#22094d">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Label>
+            <Button fx:id="decryptCipherText" layoutX="458.0" layoutY="82.0" mnemonicParsing="false" onAction="#decryptCipher" prefHeight="25.0" prefWidth="132.0" text="Decrypt Ciphertext" textFill="#094d1f">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <TextField fx:id="decryptedCipherText" layoutX="14.0" layoutY="125.0" prefHeight="25.0" prefWidth="577.0">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></TextField>
+         </children></Pane>
+   </children>
+</VBox>

@@ -1,0 +1,144 @@
+            
+hr{
+    margin: 15px 0px 15px 0px;
+}
+            .main_container{
+                width: auto;
+                height: auto;
+                box-shadow: 10px 10px 5px #313131;
+                border: solid black 1px;
+                border-radius: 5px;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: #FCFCFC;
+                font-size: 26px;
+                color: #00003D;
+                padding: 20px 20px 20px 20px;
+                font-weight: bold;
+            }
+            #timer{
+                text-align: right;
+                font-size: 22px;
+                margin-right: 20px;
+                color: #313131;
+            }
+            /* page 0 */
+            .start_page{
+                width: 600px;
+                height: 250px;
+                text-align: center;
+                border-radius: 8px;
+                background: url('../images/images1.jpg');
+                box-shadow: 0px 0px 5px #FCFCFC;
+            }
+            
+            /* button to start quiz */
+            #start_button, #review_button{
+                width: 400px;
+                height: 75px;
+                font-size: 20px;
+                box-shadow: 2px 2px 2px #313131;
+                background: linear-gradient(to bottom right, #628794, #E6E6E6);
+                border-radius: 5px;
+                margin-bottom: 20px;
+                cursor: pointer;
+            }
+            .start_button_block{
+                text-align: center;
+            }
+            body{
+                background: url('../images/images2.jpg');
+            }
+            .question_container{
+                width: 600px;
+                height: auto;
+                padding: 0px 20px 0px 20px;
+            }
+            .question_number{
+                font-size: 24px; 
+                font-family: Times new Roman;
+                text-align: center;
+                color: #00003D;
+                font-weight: bold;
+            }
+            .question{
+                font-size: 26px;
+                color: #00003D;
+                font-weight: bold;
+                padding-left: 10px;
+            }
+            .option{
+                font-size: 22px;
+                width: 350px;
+                margin: 15px 0px 0px 170px;
+                border-radius: 8px;
+            }
+            .container_footer{
+                text-align: center;
+                width: 600px;
+                margin-left: 20px;
+            }
+            .container_footer #left_button{
+                width: 100px;
+                height: 25px;
+                float: left;
+                border-radius: 5px;
+                box-shadow: 2px 2px 2px #313131;
+                background: linear-gradient(to bottom left, #628794, #E6E6E6);
+                cursor: pointer;
+                visibility: visible;
+            }
+            .container_footer #right_button{
+                width: 100px;
+                height: 25px;
+                float: right;
+                border-radius: 5px;
+                box-shadow: 2px 2px 2px #313131;
+                background: linear-gradient(to bottom right, #628794, #E6E6E6);
+                cursor: pointer;
+            }
+            .container_footer #finish_button{
+                width: 130px;
+                height: 25px;
+                color: red;
+                float: right;
+                border-radius: 5px;
+                box-shadow: 2px 2px 2px #313131;
+                background: linear-gradient(to bottom right, #628794, #E6E6E6);
+                cursor: pointer;
+            }
+            .correct_message{
+                color: green;
+                font-size: 18px;
+                //text-align: center;
+                font-weight: bold;
+                border: solid green 2px;
+                border-radius: 5px;
+                padding: 3px 5px 3px 5px;
+            }
+            .wrong_message{
+                color: red;
+                font-size: 18px;
+                text-align: center;
+                font-weight: bold;
+                border: solid red 2px;
+                border-radius: 5px;
+                padding:3px 5px 3px 5px;
+            }
+            .question_span{
+                font-size: 14px;
+            }
+
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-Mar-2015, 22:15:47
+    Author     : Tomas
+*/
+

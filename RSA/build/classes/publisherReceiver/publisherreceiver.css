@@ -1,0 +1,15 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-color: red;
+}
+#middlePanel{
+    //-fx-border-color: #22094d;
+    //-fx-border-radius: 14px;
+    -fx-background-color: #edeaf1;
+    
+}
+
+

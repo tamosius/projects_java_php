@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="401.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sender.SenderController">
+   <children>
+      <Pane prefHeight="119.0" prefWidth="600.0">
+         <children>
+            <TextField id="publicKey" fx:id="publicKeyN" layoutX="105.0" layoutY="18.0" prefHeight="25.0" prefWidth="477.0">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></TextField>
+            <TextField fx:id="publicKeyE" layoutX="105.0" layoutY="64.0" prefHeight="25.0" prefWidth="477.0">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></TextField>
+            <Label layoutX="22.0" layoutY="22.0" text="Public key (n):" textFill="#22094d">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Label>
+            <Label layoutX="22.0" layoutY="68.0" text="Public key (e):" textFill="#22094d">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Pane id="middlePanel" prefHeight="151.0" prefWidth="600.0" stylesheets="@sender.css">
+         <children>
+            <Button fx:id="encryptMessage" layoutX="439.0" layoutY="83.0" mnemonicParsing="false" onAction="#encryptPlainMessage" prefHeight="25.0" prefWidth="139.0" text="Encrypt message" textFill="#22094d">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <TextField fx:id="plainTextMessage" layoutX="23.0" layoutY="45.0" prefHeight="25.0" prefWidth="555.0">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></TextField>
+            <Label layoutX="23.0" layoutY="22.0" text="Message:" textFill="#22094d">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Label>
+            <Button fx:id="clearMessages" layoutX="22.0" layoutY="83.0" mnemonicParsing="false" onAction="#clearMessages" prefHeight="25.0" prefWidth="73.0" text="Clear" textFill="#ab1515">
+               <font>
+                  <Font name="Arial Bold Italic" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </Pane>
+      <Pane prefHeight="167.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="sendCipherText" layoutX="443.0" layoutY="76.0" mnemonicParsing="false" onAction="#sendCipherText" prefHeight="25.0" prefWidth="139.0" text="Send Ciphertext" textFill="#0c460c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <TextField fx:id="cipherTextMessage" layoutX="27.0" layoutY="45.0" prefHeight="25.0" prefWidth="555.0">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></TextField>
+            <Label layoutX="27.0" layoutY="22.0" text="Ciphertext:" textFill="#22094d">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </children>
+</VBox>

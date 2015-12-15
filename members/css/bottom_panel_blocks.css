@@ -1,0 +1,179 @@
+/* --------------------------- last visited/updated member block ------------------------------------ */
+.last_attended_member, .last_updated_member{ /* main div block */
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: 345px;
+    //width: 27%;
+    //max-width: 370px;
+    //height: 90px;
+    height: auto;
+    float: left;
+    margin: 10px 0px 0px 10px;
+    background: lightgray;
+    -webkit-box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black;
+    -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+    position: relative;
+    //border: solid black 1px;
+}
+.last_attended_member img, .last_updated_member img{
+    float: left;
+    margin: 4px 6px 4px 4px;
+    width: 78px;
+    //width: 21%;
+    height: 80px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 3px black;
+    box-shadow: 0 0 3px black;
+    //border: solid rgb(160,160,255) 1px;
+}
+.last_attended_member #last_visited_today, .last_updated_member #last_updated{ /* first line in the block */
+    color: #00003D;
+    font-size: 13px;
+    //font-size: 1vw;
+    //text-decoration: underline;
+    font-weight: bold;
+    display: block;
+    margin: 4px 0px 3px 0px;
+    //-webkit-text-shadow: 0 0 1px black;
+    //text-shadow: 0 0 1px black;
+}
+.last_attended_member div, .last_updated_member div{
+    margin: 1px;
+    //display: block;
+    float: left;
+}
+.last_attended_member span, .last_updated_member span{
+    width: 103px;
+    //width: 8vw;
+    //padding-right: 8px;
+    float: left;
+    font-size: 11px;
+    //font-size: 0.9vw;
+    color: #00003D;
+    //font-weight: bold;
+    
+}
+.last_attended_member #full_name, .last_updated_member #full_name{
+    font-weight: bold;
+    color: #00003D;
+}
+.last_attended_member #date_visited, .last_attended_member #membership_status, .last_updated_member #date_updated, .last_updated_member #membership_status{
+    font-weight: normal;
+    color: #00003D;
+}
+
+.last_attended_member #time_visited, .last_updated_member #paid_membership{
+    font-weight: normal;
+    color: #1d581d;
+}
+
+.last_attended_member #full_attendance, .last_updated_member #show_all_updated_memberships{
+    font-size: 11px;
+    color: #00003D;
+    float: right;
+    margin: 2px 6px 0px 0px;
+    cursor: pointer;
+    //position: fixed;
+    //bottom: 0;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    transition: color 0.5s;
+}
+.last_attended_member #full_attendance:hover, .last_updated_member #show_all_updated_memberships:hover{
+    color: #CC0066;//#FF6262;
+}
+/* --------------------------- end last visited/updated member block ------------------------------- */
+
+/* --------- REPORT BLOCKS --------------------------------------------------------------------------------------------------------------------------- */
+.reports{
+    border: 1px solid #fff;
+    border-radius: 5px;
+    width: auto;
+    height: 90px;
+    float: left;
+    margin: 10px 0px 0px 10px;
+    background: lightgray;
+    color: #00003D;
+    font-size: 13px;
+    -webkit-box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black;
+    -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+    position: relative;
+}
+.reports label{
+    margin: 1px;
+    //display: block;
+    //float: left;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.reports label:hover{
+    cursor: pointer;
+    color: #CC0066;
+}
+.reports #num_visits{
+    color: green;
+}
+.reports div{
+   border: solid grey 1px;
+   border-radius: 5px;
+   margin: 2px;
+   padding: 2px;
+   width: 150px;
+}
+#today_visits{
+    
+}
+/*------- POPUPS 'most visited days' and 'last visitors' IN REPORTS BLOCKS ---------------------------------------------------------------------------- */
+.most_visited_days ul, .last_visitors ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    //border-radius: 5px;
+    border: solid black 1px;
+    position: absolute;
+    -webkit-box-shadow: 0 0 3px black;
+    box-shadow: 0 0 8px black;            
+    top: -205px;
+    left: 2px;
+}
+.last_visitors ul{     
+    top: -245px; 
+}
+.most_visited_days ul li, .last_visitors ul li{
+    background: grey;
+    width: 137px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: solid white 1px;
+    cursor: pointer;
+    //border-bottom: solid white 1px;
+    //padding: 0px 5px 0px 5px;
+    //border-radius: 5px;
+    //position: absolute;
+}
+.most_visited_days ul li:hover, .last_visitors ul li:hover{
+    background: lightgrey;
+}
+
+
+
+
+.last_visited_date_time, .today_visited_name{
+    height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+
+

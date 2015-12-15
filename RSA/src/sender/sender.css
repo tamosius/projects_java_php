@@ -1,0 +1,17 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+#publicKey{
+    -fx-border-color: green;
+}
+
+#middlePanel{
+    //-fx-border-color: #22094d;
+    //-fx-border-radius: 14px;
+    -fx-background-color: #edeaf1;
+    
+}

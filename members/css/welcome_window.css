@@ -1,0 +1,35 @@
+.welcome_window{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: #628794;
+    z-index: 110;
+    //display: none;
+}
+.welcome_block{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+}
+.welcome_block #logo_image{
+    width: 700px;
+    height: 200px;
+    border-radius: 5px;
+    border: solid 1px #fff;
+    margin-bottom: 10px;
+    box-shadow: 0px 10px 20px black;
+}
+.welcome_block #loading_image{
+    width: 230px;
+    height: 190px;
+    border-radius: 5px;
+    margin-top: 40px;
+    box-shadow: 0px 5px 5px black;
+}
+
+

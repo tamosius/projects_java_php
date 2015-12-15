@@ -1,0 +1,89 @@
+.delete_member_background_overlay{
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #00003D;
+    -moz-opacity: 0.8;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    z-index: 100;
+    display: none;
+}
+.delete_member_confirm_window{
+    display: none;
+    width: auto;
+    height: auto;
+    background: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px 15px 15px 15px;
+    z-index: 101;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+    //position: relative;
+}
+.delete_member_confirm_window img{
+    width: 50px;
+    height: 50px;
+    border: solid black 1px;
+    border-radius: 5px;
+    box-shadow : 0px 0px 10px black;
+    float: left;
+    margin-bottom: 15px;
+}
+.delete_member_confirm_window div{
+    color: #00003D;
+    font-size: 20px;
+    display: inline;
+    //position: absolute;
+    
+    //float: left;
+    //clear: right;
+}
+.delete_member_confirm_window hr{
+    clear: left;
+}
+.delete_member_confirm_window span{
+    float: left;
+    margin: 11px 0px 0px 10px;
+}
+.delete_member_confirm_window #confirm_delete_member{
+    width: 80px;
+    height: 25px;
+    color: green;
+    float: right;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    transition: background 1s;
+    outline: 0;
+}
+.delete_member_confirm_window #cancel_delete_member{
+    width: 80px;
+    height: 25px;
+    color: red;
+    float: right;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    transition: background 1s;
+    outline: 0;
+}
+.delete_member_confirm_window #confirm_delete_member:hover, .delete_member_confirm_window #cancel_delete_member:hover{
+    background: #B2BFD2;
+}
+
+
+
+
+
+

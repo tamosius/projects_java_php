@@ -1,0 +1,294 @@
+body{
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+
+
+.content{
+    width: auto;
+    height: auto;
+    border: solid black 1px;
+    font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.top_panel{
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(to bottom, lightblue, #00003D);
+}
+.bottom_panel{
+    height: 110px;
+    width: 100%;
+    background: linear-gradient(to bottom, lightblue, #00003D);
+    //background: #A3A3B9;
+    border-top: 1px black solid;
+}
+.search{
+    display: inline-block;
+    padding: 7px 7px 7px 0px;
+    width: auto;
+    
+    float: right;
+    
+}
+input:focus{
+    background: #E0FFC2;
+    outline: 0;
+}
+#search_text{
+    width: 160px;
+    height: 20px;
+    margin: 0px 0px 0px 0px;
+    font-weight: normal;
+    border-radius: 10px;
+    padding: 2px 0px 1px 7px;
+    font-size: 16px;
+}
+#add_member{
+   width: 100px;
+   height: 23px;
+   border-radius: 10px;
+   background: #C2C2D1;
+   margin: 0px 0px 0px 8px;
+   cursor: pointer;
+   color: white;
+   -webkit-transition: background 1s;
+   -moz-transition: background 1s;
+   transition: background 1s;
+   -webkit-box-shadow: 0 0 5px black;
+   box-shadow: 0 0 5px black;
+   outline: 0;
+}
+#add_member:hover{
+    background: #00003D;
+}
+.body_table tr:nth-child(even){
+    background: #E2E2E6;//#C2C2D1;
+}
+.body_table .row_data:hover{
+    background: #B2BFD2;//#AAB0B9;//#9EBFFF;//#628794;
+    color: white;
+    //text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.body_table tr{
+    height: 53px;
+}
+.body_table .days_left{
+    font-size: 10px;
+    margin: 0px 0px -12px 0px;
+}
+.outer_table{
+    width: 100%;
+}
+.header_table{
+    width: 100%;
+    border-collapse: collapse;
+    height: 75px;
+}
+.body_table{
+    letter-spacing: 1px;
+    width: 100%;
+    border-collapse: collapse;     /*#5C85AD  hover*/
+}                                  /*#628794 */
+/*----------------- table headers ---------------------------------- */
+.first_name, .last_name{
+    width: 30%;
+    background: linear-gradient(to top, lightblue, #00003D);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.membership{
+    background: linear-gradient(to top, lightblue, #00003D);
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+.from, .to{
+    width: 15%;
+    background: linear-gradient(to top, lightblue, #00003D);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    //display: none;
+    
+    //visibility: visible;
+}
+.paid{
+    width: 10%;
+    background: linear-gradient(to top, lightblue, #00003D);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+/*----------------------------- end table headers -------------------------------- */
+
+/* ------------------------- table rows ------------------------------------------ */
+.first_name_data, .last_name_data{
+    width: 30.4%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.from_data, .to_data{
+    width: 15.2%;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.paid_data{
+    height: 40px;
+    width: 10%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* --------------------------- end table rows ----------------------------------- */
+.total_members_count{
+    color: white;
+    font-size: 18px;
+    padding: 10px 0px 0px 8px;
+    float: left;
+    font-weight: bold;
+}
+.row_data{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    /*-webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    transition: background 0.2s;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    transition: color 0.2s;*/
+}
+
+
+/*--------- POPUP WINDOW ON SUCCESSFULL SUBMIT/UPDATE PROFILE ---------------------------------------------------------------------------------------- */
+.popup_window{
+    display: none;
+    width: 600px;
+    height: auto;
+    background: #628794;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 15px 15px 15px 15px;
+    z-index: 88;
+    position: fixed;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+}
+.popup_window p{
+    color: #D3D3D3;
+    font-size: 26px;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+}
+
+.popup_window strong{
+    color: white;
+    font-size: 28px;
+}
+.popup_window #successfull_add_update_image{
+    width: 50px;
+    height: 50px;
+    margin: 10px 0px 0px 275px;
+    border: solid black 1px;
+    border-radius: 5px;
+    box-shadow : 0px 0px 10px black;
+}
+.popup_window #check_in_image{
+    width: 95px;
+    height: 100px;
+    float: left;
+    border: solid black 1px;
+    border-radius: 5px;
+    box-shadow : 0px 0px 10px black;
+}
+/* ------- ERROR POPUP WINDOW ON SUBMIT -------------------------------------------------------------------------------------------------------------- */
+.error_window{  /* 'add_update_validation.js' */
+    display: none;
+    width: 600px;
+    height: auto;
+    background: #628794;
+    border: 1px solid black;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    z-index: 92;
+    position: fixed;
+    top: 15%;
+    left: 30%;
+    transform: translate(-50%, -15%);
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+}
+.error_window p{
+    color: #D3D3D3; //#FF6262;
+    font-size: 22px;
+}
+
+.error_window img{
+    width: 50px;
+    height: 50px;
+    margin: 20px 0px 0px 275px;
+    border: solid black 1px;
+    border-radius: 5px;
+    box-shadow : 0px 0px 10px black;
+}
+/*------------------ BOTTOM PANEL BUTTON 'Main' --------------------------------------------------------------------------------------------- */
+.buttons_block{
+    width: 80px;
+    height: auto;
+    float: right;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 15px 10px 10px 10px;
+    background: lightgrey;
+    -webkit-box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black;
+}
+.buttons_block #back_to_main_window{
+    width: 60px;
+    height: 60px;
+    font-size: 15px;
+    color: white;
+    background: #C2C2D1;
+    border-radius: 5px;
+    margin: 10px 10px 10px 10px;
+    cursor: pointer;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    transition: background 1s;
+    -webkit-box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black;
+    outline: 0;
+}
+.buttons_block #back_to_main_window:hover{
+    background: #00003D;
+}
+button::-moz-focus-inner{ /* removes dotted outline in mozilla */
+    border: 0;
+}
+/*------------------------- CHECK IN, USED INSTEAD BARCODE SCANNER ---------------------------------------------------------------------------------------- */
+#check_in{
+    font-size: 6px;
+    color: green;
+    float: right;
+    margin: 8px 5px 0px 0px;
+    cursor: pointer;
+}
+.size{ /* size of 'body_table' */
+    width: 100%;
+    height: calc(100vh - 249px); /* 194px */
+    overflow-y: scroll;
+}
+
+
+
